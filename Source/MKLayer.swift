@@ -269,7 +269,7 @@ open class MKLayer: CALayer, CAAnimationDelegate {
             scaleAnim.toValue = 1
             scaleAnim.duration = rippleDuration
             scaleAnim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-            //scaleAnim.delegate = self
+            scaleAnim.delegate = self
 
             let moveAnim = CABasicAnimation(keyPath: "position")
             moveAnim.fromValue = NSValue(cgPoint: touchLocation)
